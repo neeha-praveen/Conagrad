@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./stu_style.css"; // Ensure this file is imported
+import "./stu_style.css"; 
 
 const StudentAuth = () => {
   const [isActive, setIsActive] = useState(false);
@@ -22,7 +22,7 @@ const StudentAuth = () => {
             <a href="#">Forgot Password?</a>
           </div>
           <button type="submit" className="btn">
-            LOGIN
+            Login
           </button>
           <p>Login with Google</p>
           <div className="social-icons">
@@ -36,7 +36,7 @@ const StudentAuth = () => {
       {/* Register Section */}
       <div className="form-container register-box">
         <form>
-          <h1>REGISTRATION</h1>
+          <h1>Registration</h1>
           <div className="input-box">
             <input type="text" placeholder="Name" required />
             <i className="bx bxs-rename"></i>
@@ -54,7 +54,7 @@ const StudentAuth = () => {
             <i className="bx bx-lock-alt"></i>
           </div>
           <button type="submit" className="btn">
-            REGISTER
+            Register
           </button>
           <p>Or Register with Google</p>
           <div className="social-icons">
@@ -66,8 +66,8 @@ const StudentAuth = () => {
       </div>
 
       {/* Toggle Section */}
-      <div className="toggle-box">
-        <div className="toggle-panel toggle-left">
+      <div className="toggle-box-stu">
+        <div className="toggle-panel-stu toggle-left">
           <h1>Namaste, Welcome!</h1>
           <p>Don't have an account?</p>
           <button className="btn register-btn" onClick={() => setIsActive(true)}>
